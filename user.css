@@ -30,11 +30,11 @@ body::before {
     left: 0; 
     right: 0; 
     bottom: 0;
-    background-image: url("https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1548&auto=format&fit=crop");
+    background-image: url("https://i.ibb.co/67mgr08M/download.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(30px);
+    filter: blur(30px) brightness(1.00); /* tu sie szponci */
     z-index: -1 !important;
     pointer-events: none;
 }
@@ -238,6 +238,7 @@ footer {
     section-background-base: #00000000;
     background-color: #00000000 !important;
 }
+
 #Desktop_PanelContainer_Id {
     background-color: #00000000 !important;
     background: transparent !important;
@@ -281,3 +282,34 @@ footer {
     background-color: #00000000;
 }
 
+.main-useDropTarget-base,
+/*.main-useDropTarget-track,
+.main-useDropTarget-episode,
+.main-useDropTarget-album */{
+    background-color: #00000060;
+}
+.ChipInnerComponent-sm {
+    background-color: #00000000;
+    }
+.main-nowPlayingView-section {
+    background-color: #00000000 !important; 
+    }
+.NowPlayingView {
+    section-background-base: #00000000;
+    background-color: #00000000;
+    background-base: #00000000;
+}
+.NowPlayingView, :root {
+    --section-background-base: #00000000 !important;
+    background-color: transparent !important;
+}
+.NowPlayingView {
+    --section-background-base: #00000000 !important;
+    --background-color: #00000000 !important;
+    --background-base: #00000000 !important;
+}
+#Desktop_PanelContainer_Id_1 {
+    --section-background-base: transparent !important;
+}
+
+/* tak zositawei te 4 rozne kody pomimo ze nie ma to sensu a co */
