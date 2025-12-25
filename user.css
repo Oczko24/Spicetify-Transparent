@@ -18,9 +18,12 @@ body {
 }
 :root {
    --spice-main: #00000000;
+   --spice-card: #00000000;
+    --spice-misc: #00000000;
    --spice-rgb-shadow: 0, 0, 0, 0;
    --encore-overlay-box-shadow: 0 0px 0px 0 #00000000;
    --spice-sidebar: pizda; /* tu musi to byc */
+   --spice-highlight-elevated: #00000060;
 }
 
 body::before {
@@ -34,7 +37,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(30px) brightness(1.00); /* tu sie szponci */
+    filter: blur(80px) brightness(1.00); /* tu sie szponci */
     z-index: -1 !important;
     pointer-events: none;
 }
@@ -111,7 +114,7 @@ body,
 .main-topBar-overlay {
     background: none !important;
     background-color: transparent !important;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(1px);
 }
 
 /* Header i entity header */
@@ -218,7 +221,7 @@ footer {
 .ARSbx0SA65V5vol27FS4.main-trackList-trackListHeader {
     box-shadow: 0 -1px 0 0 #00000000;
     background: #00000000;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(1px);
     border-bottom: 0px solid #00000000;
 }
 .view-homeShortcutsGrid-shortcut
@@ -269,7 +272,12 @@ footer {
 .encore-dark-theme .encore-inverted-light-set {
     --background-base: #FFA000;
 }
-
+.encore-dark-theme, .encore-dark-theme .encore-base-set {
+    --background-base: #00000000;
+    --background-highlight: #00000000;
+    --background-press: #00000000;
+    --background-elevated-base: #00000000;
+}
 .main-card-imageContainer img, .main-image-image, [data-testid="card-image-container"] img {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
     }
@@ -313,3 +321,59 @@ footer {
 }
 
 /* tak zositawei te 4 rozne kody pomimo ze nie ma to sensu a co */
+
+.main-cardImage-imageWrapper {
+    background-color: #00000000;
+    box-shadow: rgba(0, 0, 0, 0.0) 0px 0px 0px;
+    }
+    
+    
+/* spicetify */
+.searchbar-bar {
+    border-style: none;
+    background-color: #00000060!important;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #ff0000 !important;
+    border-color: #00000000;
+}
+.e-91000-box--elevated {
+    background-color: #00000060;
+    backdrop-filter: brightness(0.54) blur(10px);
+    }
+    
+    
+    
+    /* chyba jednak dodaje shadowy */
+.main-card-imageContainer img, .main-image-image, [data-testid="card-image-container"] img {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+.main-card-card {
+    background: #00000000;
+}
+
+.marketplace-tabBar-active {
+    background-color: #00000060;
+}
+.main-contextMenu-menu {
+    background-color: #00000060;
+    backdrop-filter: blur(30px);
+    }
+.search-searchCategory-carouselButton {
+    background-color: #272c22;
+    }
+    
+        
+.GenericModal__overlay {
+
+}
+.encore-dark-theme, .encore-dark-theme .encore-base-set {
+    background-color: #00000060;
+    }
+    /* wyszukiwarka */
+.TypeList__TypeListElement-sc-1jhixr6-0, .TypeListElement-grid-typeList-condensedAll {
+    backdrop-filter: blur(30px);
+}
+.cover-art {
+    background-color: #292718;
+    }
