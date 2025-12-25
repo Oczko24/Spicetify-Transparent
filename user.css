@@ -377,3 +377,13 @@ footer {
 .cover-art {
     background-color: #292718;
     }
+    
+.playlist-playlist-playlistContent {
+backdrop-filter: blur(30px);
+}
+.x-explicit-label {
+    background-color: #00000060;
+    }
+.x-explicit-label {
+    color: #ffffff80;
+}
