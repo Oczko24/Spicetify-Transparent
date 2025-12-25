@@ -18,8 +18,9 @@ body {
 }
 :root {
    --spice-main: #00000000;
+   --spice-player: #00000060;
    --spice-card: #00000000;
-    --spice-misc: #00000000;
+   --spice-misc: #00000000;
    --spice-rgb-shadow: 0, 0, 0, 0;
    --encore-overlay-box-shadow: 0 0px 0px 0 #00000000;
    --spice-sidebar: pizda; /* tu musi to byc */
@@ -113,8 +114,8 @@ body,
 .main-topBar-background,
 .main-topBar-overlay {
     background: none !important;
-    background-color: transparent !important;
-    backdrop-filter: blur(1px);
+    background-color: #00000000 !important;
+/*    backdrop-filter: blur(1px); */
 }
 
 /* Header i entity header */
@@ -126,7 +127,13 @@ body,
     background: none !important;
     background-color: transparent !important;
 }
-
+.main-trackList-trackListHeader {
+    background: #ff0000 !important;
+    background-color: #00000000 !important;
+    position: static !important;;
+    }
+    
+    
 /* Home view */
 .main-home-homeHeader,
 .main-shelf-shelf {
@@ -224,12 +231,14 @@ footer {
     backdrop-filter: blur(1px);
     border-bottom: 0px solid #00000000;
 }*/
+
+
 .view-homeShortcutsGrid-shortcut
  {
     background-color: #00000000;
 }
 .main-globalNav-searchInputContainer .main-topBar-searchBar {
-    background: #00000060;
+    background: #222924;
 }
 .ChipInnerComponent-sm-isUsingKeyboard {
     background-color: #00000060;
@@ -331,7 +340,7 @@ footer {
 /* spicetify */
 .searchbar-bar {
     border-style: none;
-    background-color: #00000060!important;
+    background-color: #000000!important;
     border-radius: 8px;
     padding: 10px 12px;
     color: #ff0000 !important;
@@ -367,7 +376,7 @@ footer {
     
         
 .GenericModal__overlay {
-
+   /* backdrop-filter: blur(5px);*/
 }
 .encore-dark-theme, .encore-dark-theme .encore-base-set {
     background-color: #00000060;
@@ -409,3 +418,25 @@ backdrop-filter: blur(30px);
 .main-contextMenu-menuItem {
     overflow: visible !important;
 }
+.encore-dark-theme, .encore-dark-theme .encore-base-set
+Specificity: (0,1,0)
+ {
+    background-color: #00000000;
+}
+.main-confirmDialog-container {
+    background-color: #00000060;
+    backdrop-filter: blur(30px);
+    }
+.body, .dialog {
+    color: var(--spice-subtext);
+}
+.main-contextMenu-tippy {
+    background-color: #00000060;
+    backdrop-filter: blur(30px);
+    }
+
+
+.playlist-playlist-actionBarBackground-background {
+background-color: #FFA00050;
+}
+
